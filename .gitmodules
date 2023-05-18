@@ -1,0 +1,6 @@
+[submodule "core"]
+	path = core
+	url = https://github.com/secultce/mapasculturais.git
+[submodule "themes/Ceara"]
+	path = themes/Ceara
+	url = https://github.com/secultce/theme-Ceara.git
