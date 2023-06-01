@@ -16,6 +16,7 @@ services:
       - ../docker-data/private-files:/var/www/private-files
       - ../tests:/var/www/tests
       - ../themes/Ceara:/var/www/html/protected/application/themes/Ceara
+      - ../plugins/MultipleLocalAuth:/var/www/html/protected/application/plugins/MultipleLocalAuth
     links:
       - db
       - redis
