@@ -6,5 +6,8 @@ return [
         'EvaluationMethodSimple' => ['namespace' => 'EvaluationMethodSimple'],
         'EvaluationMethodDocumentary' => ['namespace' => 'EvaluationMethodDocumentary'],
         'EvaluationMethodQualification' => ['namespace' => 'EvaluationMethodQualification'],
+        'MultipleLocalAuth' => [
+            'namespace' => 'MultipleLocalAuth',
+        ],
     ]
 ];
