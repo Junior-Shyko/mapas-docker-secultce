@@ -5,7 +5,7 @@ services:
       context: ../core
       dockerfile: ./compose/local/Dockerfile
     ports:
-      - "80:80"
+      - "8080:80"
     volumes:
       - ../core/src/protected:/var/www/html/protected
       - ../scripts:/var/www/scripts
@@ -30,15 +30,15 @@ services:
     depends_on:
       - db
       - redis
-      - mailhog
+      # - mailhog
       
     stdin_open: true
     tty: true
     
-  mailhog: 
-    image: mailhog/mailhog
-    ports:
-      - "8025:8025"
+  # mailhog: 
+  #   image: mailhog/mailhog
+  #   ports:
+  #     - "8025:8025"
 
   redis:
     image: redis:6
