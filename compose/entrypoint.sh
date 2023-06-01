@@ -11,7 +11,7 @@ $pdo = null;
 echo "\naguardando o banco de dados subir corretamente...";
 while(true){
     try {
-        $pdo = new PDO("pgsql:host={$dbhost};port=5432;dbname={$dbname};user={$dbuser};password={$dbpass}");
+        $pdo = new PDO("pgsql:host={$dbhost};port=5470;dbname={$dbname};user={$dbuser};password={$dbpass}");
         echo "\nconectado com sucesso ao banco pgsql:host={$dbhost};port=5432;dbname={$dbname};user={$dbuser};\n";
         break;
     } catch (Exception $e) {
